@@ -2,6 +2,7 @@ import classes from './Home.module.scss'
 import MapsLogo from '../../assets/vectors/google-maps-logo.svg'
 import Phone from '../../assets/vectors/phone-icon.svg'
 import Instagram from '../../assets/vectors/instagram-logo.svg'
+import classNames from "classnames";
 
 const Home = () => {
     return (
@@ -12,7 +13,9 @@ const Home = () => {
                 </div>
                 <div className={classes.Content__Right}>
                     <div className={classes.Description}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lacus suscipit, ornare augue sed, malesuada lacus. Nullam velit lectus, porttitor a euismod et, semper eget arcu. Donec vitae accumsan </p>
+                        <h1>Archangel Speedshop Portal</h1>
+                        <p>Find below quick access to our social and contact details.</p>
+                        <p>Online booking is a feature currently under development, for the time being please call us if you have any inquiry.</p>
                     </div>
                     <a className={classes.Maps_Wrapper} href="https://goo.gl/maps/scKABvQ37xKSHrB77" target="__blank">
                         <div className={classes.IconWrapper}>
@@ -38,6 +41,32 @@ const Home = () => {
                             <p>Find us in Instagram</p>
                         </div>
                     </a>
+                </div>
+            </div>
+            <div className={classes.Services_Section}>
+                <h1>Services</h1>
+                <div className={classes.Services_List}>
+
+                    <div className={classes.Service__Container}>
+                        <div className={classNames(classes.Service__Image, classes.wheel_alignment)} />
+                        <div className={classes.Service__Description}>
+                            Wheel Alignment
+                        </div>
+                    </div>
+
+                    <div className={classes.Service__Container}>
+                        <div className={classNames(classes.Service__Image, classes.ac)} />
+                        <div className={classes.Service__Description}>
+                            AC Reconditioning
+                        </div>
+                    </div>
+
+                    <div className={classes.Service__Container}>
+                        <div className={classNames(classes.Service__Image, classes.wheel_refurbishment)} />
+                        <div className={classes.Service__Description}>
+                            Tire Balancing & Refurbishment
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
