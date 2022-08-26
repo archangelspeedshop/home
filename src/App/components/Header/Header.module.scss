@@ -1,0 +1,48 @@
+@import '../../../assets/styles/base';
+
+.Header {
+  &__Container {
+    background-color: $main-background;
+    padding: 25px 50px;
+
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1rem solid $main-accent;
+  }
+
+  &__Links_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__Links {
+    display: flex;
+    flex-direction: row;
+
+
+    a {
+      margin-right: 2rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+  }
+  &__CTA {
+    background-color: $main-accent;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: $radius;
+    a, a:hover {
+      color: $main-background;
+    }
+
+    &:hover {
+      background-color: darken($main-accent, 10);
+    }
+  }
+}

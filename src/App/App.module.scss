@@ -1,0 +1,28 @@
+@use "sass:color";
+@import '../assets/styles/base';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+
+  font-family: sans-serif;
+}
+
+html {
+  background-color: $main-background;
+}
+
+a {
+  text-decoration: none;
+
+  color: $main-accent;
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: lighten($main-accent, 10);
+  }
+}
