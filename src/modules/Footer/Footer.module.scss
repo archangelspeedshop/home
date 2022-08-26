@@ -1,0 +1,9 @@
+@import '../../assets/styles/base';
+
+.Footer {
+  &__Container {
+    border-top: 1px solid lighten($main-background, 10);
+    padding: 50px;
+    margin-top: 50px;
+  }
+}

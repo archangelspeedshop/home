@@ -1,0 +1,197 @@
+@import '../../assets/styles/base';
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  &__Wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__Left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .Ferrari {
+      display: block;
+      background-image: url('../../assets/images/ferrari-in-garage.png');
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-right: 5px solid $main-accent;
+      box-sizing: border-box;
+    }
+  }
+
+  &__Right {
+    flex: 1;
+    padding: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid $main-accent;
+    box-sizing: border-box;
+
+    .Description {
+      text-align: center;
+      margin-bottom: 50px;
+      max-width: 500px;
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .Maps_Wrapper {
+      cursor: pointer;
+      border: 1px solid lighten($main-background, 15);
+      display: flex;
+      flex-direction: row;
+      border-radius: $radius;
+      width: 400px;
+      height: 50px;
+      align-self: center;
+      align-items: center;
+      background-color: lighten($main-background, 10);
+
+      margin-bottom: 25px;
+
+      &:hover {
+        background-color: lighten($main-background, 11);
+      }
+
+      .IconWrapper {
+        border-right: 1px solid lighten($main-background, 17);
+        background-color: lighten($main-background, 15);
+        height: 100%;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          height: 28px;
+        }
+      }
+
+      .TextContainer {
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .Services_Section {
+    border-top: 2px solid lighten($main-background, 10);
+    padding: 50px;
+    border-right: 5px solid $main-accent;
+    border-bottom: 5px solid $main-accent;
+    box-sizing: border-box;
+
+    h1 {
+      margin-bottom: 25px;
+    }
+
+    .Services_List {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .Service {
+        &__Container {
+          //cursor: pointer;
+          flex: 1;
+          display: flex;
+          margin-right: 5rem;
+          flex-direction: column;
+          border: 1px solid lighten($main-background, 10);
+          height: 500px;
+          border-radius: $radius;
+          transition: 200ms;
+
+          &:hover {
+            //transform: translate(0, -5px);
+          }
+        }
+
+        &__Image {
+          flex: 1;
+          background-size: cover;
+        }
+
+        &__Description {
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: lighten($main-background, 10);
+        }
+      }
+
+      .wheel_alignment {
+        background-image: url('../../assets/images/service-wheel-alignment.png');
+      }
+
+      .ac {
+        background-image: url('../../assets/images/service-ac.png');
+      }
+
+      .wheel_refurbishment {
+        background-image: url('../../assets/images/service-wheel-refurbishment.png');
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .Content {
+    &__Wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+    }
+
+    &__Left {
+      .Ferrari {
+        display: block;
+        background-image: url('../../assets/images/ferrari-in-garage.png');
+        height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-bottom: 5px solid $main-accent;
+        border-right: 0;
+        box-sizing: border-box;
+      }
+    }
+
+    &__Right {
+      padding: 50px;
+    }
+
+    .Services_Section {
+      border-right: 0;
+    }
+    .Services_List {
+      flex-direction: column !important;
+
+      .Service__Container {
+        flex: auto !important;
+        .Service__Image {
+          height: 500px !important;
+          width: 100% !important;
+        }
+      }
+    }
+
+
+  }
+}
