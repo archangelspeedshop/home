@@ -6,8 +6,19 @@
     padding: 25px 50px;
 
     display: flex;
-    align-items: flex-end;
     border-bottom: 1rem solid $main-accent;
+  }
+
+  &__Left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  &__Right {
+    flex: 1;
+    margin-left: 50px;
+    display: flex;
+    align-items: flex-end;
   }
 
   &__Links_Container {
