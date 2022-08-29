@@ -2,7 +2,9 @@
 
 .Header {
   &__Container {
-    background-color: $main-background;
+    background: url('../../../assets/images/header-bg.jpg') rgba($main-background, 0.85);
+    background-size:cover;
+    background-blend-mode: multiply;
     padding: 25px 50px;
 
     display: flex;
@@ -14,6 +16,7 @@
     display: flex;
     justify-content: center;
   }
+
   &__Right {
     flex: 1;
     margin-left: 50px;
@@ -33,7 +36,6 @@
     display: flex;
     flex-direction: row;
 
-
     a {
       margin-right: 2rem;
 
@@ -43,6 +45,7 @@
     }
 
   }
+
   &__CTA {
     background-color: $main-accent;
     padding: 1rem;

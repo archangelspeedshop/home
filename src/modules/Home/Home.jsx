@@ -22,7 +22,7 @@ const Home = () => {
                             <img src={MapsLogo} alt="Google Maps Logo"/>
                         </div>
                         <div className={classes.TextContainer}>
-                            <p>Find us in Google Maps</p>
+                            <p>Find us with Google Maps</p>
                         </div>
                     </a>
                     <a className={classes.Maps_Wrapper} href="tel:01506368150">
@@ -30,7 +30,7 @@ const Home = () => {
                             <img src={Phone} alt="Google Maps Logo"/>
                         </div>
                         <div className={classes.TextContainer}>
-                            <p>0150 6368150</p>
+                            <p>0150 636 8150</p>
                         </div>
                     </a>
                     <a className={classes.Maps_Wrapper} href="https://www.instagram.com/archangel_speedshop" target="__blank">
@@ -38,7 +38,7 @@ const Home = () => {
                             <img src={Instagram} alt="Instagram Logo"/>
                         </div>
                         <div className={classes.TextContainer}>
-                            <p>Find us in Instagram</p>
+                            <p>Find us on Instagram</p>
                         </div>
                     </a>
                 </div>
