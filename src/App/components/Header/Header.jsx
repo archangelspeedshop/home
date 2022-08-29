@@ -11,13 +11,13 @@ const Header = () => {
             <div className={classes.Header__Right}>
                 <div className={classes.Header__Links_Container}>
                     <div className={classes.Header__Links}>
-                        <Link to="/">Home</Link>
-                        <Link to="services">Services</Link>
-                        <Link to="about-us">About Us</Link>
-                        <Link to="contact">Contact</Link>
+                        <Link to="/"><b>Home</b></Link>
+                        <Link to="services"><b>Services</b></Link>
+                        <Link to="about-us"><b>About Us</b></Link>
+                        <Link to="contact"><b>Contact</b></Link>
                     </div>
                     <div className={classes.Header__CTA}>
-                        <Link to="book">Book online</Link>
+                        <Link to="book"><b>Book online</b></Link>
                     </div>
                 </div>
             </div>
