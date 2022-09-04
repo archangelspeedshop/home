@@ -7,7 +7,7 @@ import classNames from "classnames";
 const Home = () => {
     return (
         <div className={classes.Content}>
-            <div className={classes.Content__Wrapper}>
+            <section className={classes.Content__Wrapper}>
                 <div className={classes.Content__Left}>
                     <div className={classes.Ferrari} />
                 </div>
@@ -42,8 +42,8 @@ const Home = () => {
                         </div>
                     </a>
                 </div>
-            </div>
-            <div className={classes.Services_Section}>
+            </section>
+            <section className={classes.Services_Section}>
                 <h1>Services</h1>
                 <div className={classes.Services_List}>
 
@@ -68,7 +68,33 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section className={classes.AboutUs__Section}>
+                <h1>About Us</h1>
+
+                <div className={classNames(classes.HeroImg, classes.Content)}>
+                    <div className={classes.Left_Container}>
+                        <h3>Established in 2018</h3>
+                    </div>
+                    <div className={classes.Right_Container}>
+                        Abaculuss cadunt in regius berolinum!<br />
+                        Calcaria de placidus compater, prensionem abactor<br />
+                        Peregrinationes inciviliter ducunt ad gratis glos.
+                    </div>
+                </div>
+            </section>
+
+            <section className={classes.Contact__Section}>
+                <h1>Contact</h1>
+
+                <div className={classes.Contact__Options}>
+                    <div className={classes.Contact__Option}>WhatsApp</div>
+                    <div className={classes.Contact__Option}>Phone</div>
+                    <div className={classes.Contact__Option}>Email</div>
+                    <div className={classes.Contact__Option}>Visit Us</div>
+                </div>
+            </section>
         </div>
     )
 }

@@ -1,11 +1,20 @@
 @import '../../assets/styles/base';
 
+section {
+  box-sizing: border-box;
+  padding: 50px;
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+
 .Content {
   display: flex;
   flex-direction: column;
   &__Wrapper {
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
 
   &__Left {
@@ -44,6 +53,8 @@
 
       h1 {
         margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: 100;
       }
     }
 
@@ -91,14 +102,8 @@
 
   .Services_Section {
     border-top: 2px solid lighten($main-background, 10);
-    padding: 50px;
     border-right: 5px solid $main-accent;
     border-bottom: 5px solid $main-accent;
-    box-sizing: border-box;
-
-    h1 {
-      margin-bottom: 25px;
-    }
 
     .Services_List {
       display: flex;
@@ -191,7 +196,88 @@
         }
       }
     }
+  }
+}
 
+.AboutUs__Section {
+  padding-right: 0;
+  padding-left: 0;
 
+  h1 {
+    padding-left: 50px;
+  }
+
+  .HeroImg {
+    width: 100%;
+    background: url('../../assets/images/bmw-hotel-cover.jpg') rgba($main-background, 0.7) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-blend-mode: multiply;
+    height: 650px;
+    border-bottom: 5px solid $main-accent;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+
+    .Left_Container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      text-align: center;
+    }
+    .Right_Container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      text-align: center;
+      border-left: 1px solid rgba($main-accent, 0.45);
+    }
+  }
+}
+
+.Contact {
+  &__Section {
+  }
+
+  &__Options {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__Option {
+    border-radius: $radius;
+    background-color: lighten($main-background, 20);
+    padding: 0 3rem;
+    width: 100%;
+    height: 64px;
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 2px solid lighten($main-background, 25);
+    overflow: hidden;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+      width: 45px;
+      height: 64px;
+      background-color: $main-accent;
+      position: absolute;
+      right: -20px;
+      transform: skewX(25deg);
+    }
   }
 }
