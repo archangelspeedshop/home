@@ -1,11 +1,20 @@
 @import '../../assets/styles/base';
 
+section {
+  box-sizing: border-box;
+  padding: 50px;
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+
 .Content {
   display: flex;
   flex-direction: column;
   &__Wrapper {
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
 
   &__Left {
@@ -44,6 +53,8 @@
 
       h1 {
         margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: 100;
       }
     }
 
@@ -91,14 +102,8 @@
 
   .Services_Section {
     border-top: 2px solid lighten($main-background, 10);
-    padding: 50px;
     border-right: 5px solid $main-accent;
     border-bottom: 5px solid $main-accent;
-    box-sizing: border-box;
-
-    h1 {
-      margin-bottom: 25px;
-    }
 
     .Services_List {
       display: flex;
@@ -107,17 +112,21 @@
       .Service {
         &__Container {
           //cursor: pointer;
+          margin: 0 25px;
           flex: 1;
           display: flex;
-          margin-right: 5rem;
           flex-direction: column;
           border: 1px solid lighten($main-background, 10);
           height: 500px;
           border-radius: $radius;
           transition: 200ms;
 
-          &:hover {
-            //transform: translate(0, -5px);
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
           }
         }
 
@@ -136,11 +145,11 @@
       }
 
       .wheel_alignment {
-        background-image: url('../../assets/images/service-wheel-alignment.png');
+        background-image: url('../../assets/images/mini_wheel_alignment.jpg');
       }
 
       .ac {
-        background-image: url('../../assets/images/service-ac.png');
+        background-image: url('../../assets/images/mini_ac.jpg');
       }
 
       .wheel_refurbishment {
@@ -150,12 +159,63 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+.AboutUs__Section {
+  padding-right: 0;
+  padding-left: 0;
+
+  h1 {
+    padding-left: 50px;
+  }
+
+  .HeroImg {
+    width: 100%;
+    background: url('../../assets/images/bmw-hotel-cover.jpg') rgba($main-background, 0.7) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-blend-mode: multiply;
+    height: 650px;
+    border-bottom: 5px solid $main-accent;
+  }
 
   .Content {
-    &__Wrapper {
+    flex-direction: row;
+    padding: 50px 0;
+
+    p {
+      font-size: 2.5rem;
+      padding: 0 50px;
+
+      margin-top: 50px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    .Left_Container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      text-align: center;
+    }
+    .Right_Container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      text-align: center;
+      border-left: 1px solid rgba($main-accent, 0.45);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Content {
+    &__Wrapper {
+      flex-direction: column !important;
       width: 100vw;
     }
 
@@ -179,19 +239,40 @@
 
     .Services_Section {
       border-right: 0;
-    }
-    .Services_List {
-      flex-direction: column !important;
+      padding: 0;
 
-      .Service__Container {
-        flex: auto !important;
-        .Service__Image {
-          height: 500px !important;
-          width: 100% !important;
+      h1 {
+        padding: 25px;
+      }
+
+      .Services_List {
+        flex-direction: column;
+        padding: 0;
+
+        .Service__Container {
+          flex: auto;
+          margin: 0 0 5rem 0;
+          .Service__Image {
+            height: 500px;
+            width: 100%;
+          }
         }
       }
     }
 
+    .AboutUs__Section {
+      .Content {
+        flex-direction: column;
 
+        p {
+          padding: 0 25px;
+          margin-top: 10px;
+        }
+
+        .Right_Container {
+          border-left: 0;
+        }
+      }
+    }
   }
 }

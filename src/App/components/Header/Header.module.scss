@@ -6,9 +6,7 @@
     background-size:cover;
     background-blend-mode: multiply;
     padding: 25px 50px;
-
     display: flex;
-    border-bottom: 5px solid $main-accent;
   }
 
   &__Left {
@@ -19,36 +17,35 @@
 
   &__Right {
     flex: 1;
-    margin-left: 50px;
     display: flex;
-    align-items: flex-end;
-  }
-
-  &__Links_Container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-end;
   }
 
   &__Links {
+    position: sticky;
     display: flex;
+    padding: 1rem 50px;
+    background-color: $main-accent;
     flex-direction: row;
 
     a {
-      margin-right: 2rem;
-
+      margin-right: 6rem;
+      color: $main-background;
+      font-size: 2.5rem;
+      font-weight: 700;
       &:last-of-type {
         margin-right: 0;
       }
     }
+  }
 
+  &__CTA_Container {
+    margin: auto 0;
   }
 
   &__CTA {
     background-color: $main-accent;
-    padding: 1rem;
+    padding: 1rem 3rem;
     cursor: pointer;
     border-radius: $radius;
     a, a:hover {
@@ -57,6 +54,54 @@
 
     &:hover {
       background-color: darken($main-accent, 10);
+    }
+  }
+}
+
+.Sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+  .Header {
+    &__Container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__Left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 400px;
+      }
+    }
+
+
+    &__Right {
+      margin-top: 25px;
+      justify-content: center;
+    }
+
+    &__Links {
+      padding: 1rem 25px;
+      background-color: $main-accent;
+      flex-direction: row;
+      justify-content: center;
+
+      a {
+        margin-right: 3rem;
+        color: $main-background;
+        font-size: 2.5rem;
+        font-weight: 700;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
