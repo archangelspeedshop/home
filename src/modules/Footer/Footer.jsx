@@ -3,7 +3,8 @@ import classes from './Footer.module.scss'
 const Footer = () => {
     return (
         <footer className={classes.Footer__Container}>
-            <p>this is the footer</p>
+            <h1>&copy; { new Date().getFullYear() } Archangel Speedshop</h1>
+            <p>Performance & Restoration</p>
         </footer>
     )
 }

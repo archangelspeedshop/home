@@ -29,21 +29,21 @@ const Header = () => {
                     <div className={classes.Header__Left}>
                         <img src={ArchangelLogo} alt="archangel logo"/>
                     </div>
-                    <div className={classes.Header__Right}>
-                        <div className={classes.Header__CTA_Container}>
-                            <div className={classes.Header__CTA}>
-                                <Link to="book"><b>Book online</b></Link>
-                            </div>
-                        </div>
-                    </div>
+                    {/*<div className={classes.Header__Right}>*/}
+                    {/*    <div className={classes.Header__CTA_Container}>*/}
+                    {/*        <div className={classes.Header__CTA}>*/}
+                    {/*            <Link to="book"><b>Book online</b></Link>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
 
             </header>
             <div className={classNames(classes.Header__Links, isSticky && classes.Sticky)}>
-                <Link to="/">Home</Link>
-                <Link to="services">Services</Link>
-                <Link to="about-us">About Us</Link>
-                <Link to="contact">Contact</Link>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about-us">About Us</a>
+                {/*<Link to="contact">Contact</Link>*/}
             </div>
         </>
     )

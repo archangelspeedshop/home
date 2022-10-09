@@ -4,7 +4,7 @@ import classNames from "classnames";
 const Services = () => {
     return (
         <section className={classes.Services_Section}>
-            <h1>Services</h1>
+            <h1 id="services">Services</h1>
             <div className={classes.Services_List}>
 
                 <div className={classes.Service__Container}>
