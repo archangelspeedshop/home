@@ -1,6 +1,5 @@
 import {useEffect, useState} from 'react';
 
-import { Link } from 'react-router-dom'
 import ArchangelLogo from '../../../assets/vectors/header-logo.svg'
 import classes from './Header.module.scss'
 import classNames from "classnames";
