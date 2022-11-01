@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b5ee75ee.css",
+    "main.js": "/static/js/main.0da004c8.js",
+    "static/js/787.163585ac.chunk.js": "/static/js/787.163585ac.chunk.js",
+    "static/media/ferrari-in-garage.png": "/static/media/ferrari-in-garage.36e03e734fb62664f4e4.png",
+    "static/media/bmw-hotel-cover.jpg": "/static/media/bmw-hotel-cover.e8ccf6f9825c9313f8e8.jpg",
+    "static/media/service-wheel-refurbishment.png": "/static/media/service-wheel-refurbishment.936a62f3fb1fe1dfb17b.png",
+    "static/media/header-bg.jpg": "/static/media/header-bg.95f7be6036b1d6b95cfc.jpg",
+    "static/media/mini_ac.jpg": "/static/media/mini_ac.bfc67358930abe343a87.jpg",
+    "static/media/mini_wheel_alignment.jpg": "/static/media/mini_wheel_alignment.d5305f851f670ca858a2.jpg",
+    "static/media/Dosis-Regular.ttf": "/static/media/Dosis-Regular.16c5afafe71efb210033.ttf",
+    "static/media/Dosis-Bold.ttf": "/static/media/Dosis-Bold.1231ff1f0aac5aad68c3.ttf",
+    "static/media/Dosis-ExtraBold.ttf": "/static/media/Dosis-ExtraBold.d3f84e053984d06a1ea9.ttf",
+    "static/media/Dosis-ExtraLight.ttf": "/static/media/Dosis-ExtraLight.46ef6771a45c4d8f2e38.ttf",
+    "static/media/header-logo.svg": "/static/media/header-logo.562049627371ed9922f0c0a021c23210.svg",
+    "static/media/instagram-logo.svg": "/static/media/instagram-logo.fa41a4beee2e1e4004d3ea3409e32d2f.svg",
+    "static/media/google-maps-logo.svg": "/static/media/google-maps-logo.bbebe7cd330b6a2904efb9645e2a96b2.svg",
+    "static/media/phone-icon.svg": "/static/media/phone-icon.2f1d8b98cfb91db465c9f5de021c4597.svg",
+    "index.html": "/index.html",
+    "main.b5ee75ee.css.map": "/static/css/main.b5ee75ee.css.map",
+    "main.0da004c8.js.map": "/static/js/main.0da004c8.js.map",
+    "787.163585ac.chunk.js.map": "/static/js/787.163585ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5ee75ee.css",
+    "static/js/main.0da004c8.js"
+  ]
+}
