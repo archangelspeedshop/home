@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.1607cd17.css",
-    "main.js": "./static/js/main.2c91a5c4.js",
+    "main.js": "./static/js/main.d30c57a3.js",
     "static/js/787.163585ac.chunk.js": "./static/js/787.163585ac.chunk.js",
     "static/media/ferrari-in-garage.png": "./static/media/ferrari-in-garage.36e03e734fb62664f4e4.png",
     "static/media/bmw-hotel-cover.jpg": "./static/media/bmw-hotel-cover.e8ccf6f9825c9313f8e8.jpg",
@@ -19,11 +19,11 @@
     "static/media/phone-icon.svg": "./static/media/phone-icon.2f1d8b98cfb91db465c9f5de021c4597.svg",
     "index.html": "./index.html",
     "main.1607cd17.css.map": "./static/css/main.1607cd17.css.map",
-    "main.2c91a5c4.js.map": "./static/js/main.2c91a5c4.js.map",
+    "main.d30c57a3.js.map": "./static/js/main.d30c57a3.js.map",
     "787.163585ac.chunk.js.map": "./static/js/787.163585ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1607cd17.css",
-    "static/js/main.2c91a5c4.js"
+    "static/js/main.d30c57a3.js"
   ]
 }
