@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes,  Route } from 'react-router-dom'
+import { BrowserRouter, Routes,  Route, Navigate } from 'react-router-dom'
 import Header from "./components/Header/Header"
 import Home from "../modules/Home";
 import Footer from "../modules/Footer";
@@ -15,11 +15,7 @@ const App = () => {
                     path="/"
                     element={<Home />}
                 />
-                <Route
-                    path="/about-us"
-                    element={<AboutUs />}
-                />
-                <Route path="*" element={<p>There's nothing here!</p>} />
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             <Footer />
         </BrowserRouter>
